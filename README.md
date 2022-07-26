@@ -4,11 +4,35 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run `ng serve -o` for a dev server. It will automatically open up the server on the browser. The application will automatically reload if you change any of the source files.
+
 
 ## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run `ng generate component dir_if_any/component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
+# 7/26
+## Component
+
+By default, when you make component, there are 4 different files. 
+- `folder` named after the component
+- `component file.component.ts`
+- A template file -> `<component-name>.component.html`
+- A CSS file -> `<component-name>.component.css`
+- A testing file -> `<component-name>.component.spec.ts` 
+
+## Directive - inline styling
+`[ngStyle] = "{'any_css' : 'here' }}"`
+
+## Directive - ngFor
+`*ngFor="Javascript for loop"`
+
+## Passing in prop to tag
+ - ex) `<app-task-item [task]="task">`
+   - then the component that takes the prop should declare the prop in .ts file
+   - `@Input() task: Task`
+
+---
 
 ## Build
 
